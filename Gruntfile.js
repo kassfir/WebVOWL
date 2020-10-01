@@ -48,11 +48,11 @@ module.exports = function (grunt) {
 				options: {
 					protocol: "http",
 					hostname: "localhost",
-					port: 8000,
+					port: 8001,
 					base: deployPath,
 					directory: deployPath,
 					livereload: true,
-					open: "http://localhost:8000/",
+					open: "http://localhost:8001/",
 					middleware: function (connect, options, middlewares) {
 						return middlewares.concat([
 							require("serve-favicon")("deploy/favicon.ico"),
